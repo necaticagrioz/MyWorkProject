@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Add";
+}
+
+@model Product
+
+<div class="row">
+    <div class="col-md-10">
+        <div class="card-body">
+            <h3>Ürün Ekle</h3>
+        </div>
+        <form asp-controller="Products" asp-action="SaveProduct" method="post">
+
+            <div class="card-body">
+                <div>
+                    <label class="form-label">Ürün İsmi</label>
+                    <input class="form-control" placeholder="Ürün İsmi Giriniz" type="text" asp-for="Name" />
+                </div>
+                <div>
+                    <label class="form-label">Ürün Açıklaması</label>
+                    <input class="form-control" placeholder="Ürün Açıklaması Giriniz" type="text" asp-for="Description" />
+                </div>
+
+                <div>
+                    <label class="form-label">Ürün Fiyatı</label>
+                    <input class="form-control" placeholder="Ürün Fiyatı Giriniz" type="text" asp-for="Price" />
+                </div>
+
+                <div>
+                    <label class="form-label">Stok Miktarı</label>
+                    <input class="form-control" placeholder="Stok Miktarı Giriniz" type="text" asp-for="Stock" />
+                </div>
+
+                <div>
+                    <label class="form-label">Barkod Numarası</label>
+                    <input class="form-control" placeholder="Barkod Numarası Giriniz" type="text" asp-for="Barcode" />
+                </div>
+
+
+            </div>
+
+        <button type="submit" class="btn btn-outline-success">Kaydet</button>
+        </form>
+
+    </div>
+</div>
