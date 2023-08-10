@@ -15,20 +15,6 @@ namespace MyWorkProject.Controllers
             _productRepository = new ProductRepository();
             _context = context;
 
-            //if (!_context.Products.Any())
-            //{
-            //_context.Products.Add(new Product() {Name = "Dolce&Gabbana", Description = "Shirt", Price = 1500, Stock = 500, Barcode = 45682778 });
-            //_context.Products.Add(new Product() { Name = "Zara", Description = "T-Shirt", Price = 700, Stock = 500, Barcode = 98965234 });
-            //_context.Products.Add(new Product() { Name = "Prada", Description = "Pants", Price = 5000, Stock = 500, Barcode = 78956324 });
-            //_context.Products.Add(new Product() { Name = "Adidas", Description = "Shoes", Price = 1000, Stock = 500, Barcode = 48975234 });
-
-            //    _context.SaveChanges();
-            //}
-
-
-
-
-
         }
         public IActionResult Index()
         {
